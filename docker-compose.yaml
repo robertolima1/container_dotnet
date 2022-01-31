@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  container_test:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    image: container_test
+    container_name: container_test
+    tty: true
+    volumes:
+      - ./code:/root/code
